@@ -1,0 +1,27 @@
+:root {
+    --primary-bg: #444545;
+    --aquamarine: #B5FFE9;
+    --frozen: #C5E0D8;
+    --silver: #C9C9C9;
+    --rose: #CEABB1;
+    color: var(--rose);
+    background-color: var(---frozen);
+}
+
+a {
+  color: var(--frozen); 
+}
+
+body {
+    color: var(--rose);
+}
+
+
+h1 {
+    text-decoration-line: underline;
+}
+section {
+    padding: 20px;
+    background-color: var(--primary-bg);
+    border: var(--silver) 2px solid;
+}
