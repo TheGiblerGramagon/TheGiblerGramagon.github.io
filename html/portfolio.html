@@ -4,16 +4,35 @@
 		<meta charset="UTF-8">
 		<title>Portfolio | Graham Bradshaw</title>
 		<script src="/javascript/script.js" defer></script>
-        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="/styles/style.css">
 	</head>
     <body>
-        <div id="navbar-placeholder"></div>
         <section>
-            <h1> <a href="https://www.youtube.com/watch?v=k3DHuXvRv7c">Convolutional Neural Network (CNN) for Chess Piece Classification</a> </h1>
-            <p> I used PyTorch to design and train a CNN to classify chess pieces. At the end of training the CNN was able to identify the piece with <em>97% accuracy</em> in testing. To train the model, I built my own dataset and downloaded datasets online. To create my own photos, I took ~150 photos of a chessboard from different angles and different positions. For each photo I manually labeled the corners, computed a homography to normalize the squares. From there, an algorithm identified each square (using the corners) and labeled the piece using a string that represented the board position. This created 150 * 64 squares ~10,000 images. The images are primarily empty squares, so I pruned most of the empty squares to balance the dataset. I initially attempted to identify every piece individually, but my CNN was not accurate enough, so I simplified the model to classify squares as white, empty, or black, the minimum required information to track a game. I never achieved the accuracy I was looking for, but the project was an amazing learning experience.</p>
-            <p> <a href="https://github.com/TheGiblerGramagon/ChessPieceClassification">Repo</a> - Just look at the python files</p>
-            <img href="/labeledChess.png" alt="classification output example"></href>
+            <div id="navbar-placeholder"></div>
         </section>
+        <section>
+            <label for="list-dropdown">Filter Projects:</label>
+            <select name="list-dropdown" id="list-dropdown">
+                <option value="all">All</option>
+            </select>
+        </section>
+        <section>
+            <ul id="project-list">
+                <section data-date="2024-12-25" data-category="personal">
+                    <h1> <a href="https://www.youtube.com/watch?v=k3DHuXvRv7c">Convolutional Neural Network (CNN) for Chess Piece Classification</a> </h1>
+                    <p> I used PyTorch to design and train a CNN to classify chess pieces. At the end of training the CNN was able to identify the piece with <em>97% accuracy</em> in testing. To train the model, I built my own dataset and downloaded datasets online. To create my own photos, I took ~150 photos of a chessboard from different angles and different positions. For each photo I manually labeled the corners, computed a homography to normalize the squares. From there, an algorithm identified each square (using the corners) and labeled the piece using a string that represented the board position. This created 150 * 64 squares ~10,000 images. The images are primarily empty squares, so I pruned most of the empty squares to balance the dataset. I initially attempted to identify every piece individually, but my CNN was not accurate enough, so I simplified the model to classify squares as white, empty, or black, the minimum required information to track a game. I never achieved the accuracy I was looking for, but the project was an amazing learning experience.</p>
+                    <p> <a href="https://github.com/TheGiblerGramagon/ChessPieceClassification">Repo</a> - Just look at the python files</p>
+                    <img href="/labeledChess.png" alt="classification output example"></href>
+                </section>
+                <section data-date="2025-03-00" data-category="college">
+                    Example Project at 2025-03-00, for college
+                </section>
+                <section data-date="2026-01-02" data-category="personal">
+                    Example Project at 2026-01-02, for personal
+                </section>
+            </ul>
+        </section>
+        
         <section>
             <div id="footer-placeholder"></div>
         </section>
